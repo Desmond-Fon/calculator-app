@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'League Spartan', sans-serif;
+    background-color: hsl(222, 26%, 31%);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    margin: 10px;
+    margin-top: 50px;
+    color: white;
+}
+
+.themes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.theme-text{
+    padding-right: 15px;
+    font-size: xx-small;
+}
+
+form{
+    background-color: hsl(224, 36%, 15%);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+}
+
+#display{
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    margin: 0px 0px 10px 0px;
+    background-color: hsl(224, 36%, 15%);
+    color: white;
+    font-size: xx-large;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#keys{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    width: 300px;
+    height: 260px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: hsl(224, 36%, 15%);
+}
+
+#keys div{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(30, 25%, 89%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 2px 1px hsl(28, 16%, 65%);
+    color: hsl(221, 14%, 31%);
+
+}
+
+#keys div:hover{
+    background-color: hwb(0 97% 3%);
+}
+
+#reset{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: hsl(225, 21%, 49%);
+}
+
+#equal{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-color: hsl(6, 63%, 50%);
+    color: white;
+}
+
+
+@media only screen and (max-width: 600px){
+    .display{
+        height: 80px;
+    }
+
+    #keys{
+        height: 430px;
+        width: 320px;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .theme-text{
+        padding-right: 15px;
+        font-size: small;
+    }
+
+    .calc{
+        font-size: xx-large;
+    }
+
+    header{
+        margin-bottom: 30px;
+    }
+
+    #display{
+        margin-bottom: 20px;
+    }
+
+    #keys div{
+        font-size: x-large;
+    }
+}
