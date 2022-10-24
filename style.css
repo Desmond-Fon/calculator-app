@@ -83,28 +83,43 @@ input[type='radio']:after {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: hsl(30, 25%, 89%);
+    /* background-color: hsl(30, 25%, 89%); */
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 1px 1px 2px 1px hsl(28, 16%, 65%);
-    color: hsl(221, 14%, 31%);
+    /* box-shadow: 1px 1px 2px 1px hsl(28, 16%, 65%); */
+    /* color: hsl(221, 14%, 31%); */
 }
 
-#keys div:hover{
+.keypad:hover{
     background-color: hwb(0 97% 3%);
+}
+
+.keypad{
+    background-color: hsl(30, 25%, 89%);
+    box-shadow: 1px 1px 2px 1px hsl(28, 16%, 65%);
 }
 
 #reset{
     grid-column-start: 1;
     grid-column-end: 3;
     background-color: hsl(225, 21%, 49%);
+    box-shadow: 1px 1px 2px 1px hsl(224, 28%, 35%);
+    color: white;
+}
+
+
+#del{
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: 1px 1px 2px 1px hsl(224, 28%, 35%);
+    color: white;
 }
 
 #equal{
     grid-column-start: 3;
     grid-column-end: 5;
     background-color: hsl(6, 63%, 50%);
+    box-shadow: 1px 1px 2px 1px hsl(6, 70%, 34%);
     color: white;
 }
 
@@ -115,7 +130,7 @@ input[type='radio']:after {
     }
 
     #keys{
-        height: 430px;
+        height: 410px;
         width: 320px;
         gap: 15px;
         padding: 15px;

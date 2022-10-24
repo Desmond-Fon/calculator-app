@@ -8,7 +8,7 @@
 
 body{
     font-family: 'League Spartan', sans-serif;
-    background-color: hsl(0, 0%, 90%);
+    background-color: hsl(268, 75%, 9%);
 }
 
 header{
@@ -18,7 +18,7 @@ header{
     width: 300px;
     margin: 10px;
     margin-top: 50px;
-    color: black;
+    color: hsl(52, 100%, 62%);
 }
 
 .themes{
@@ -33,7 +33,7 @@ header{
 }
 
 form{
-    background-color: hsl(0, 0%, 93%);
+    background-color: hsl(268, 71%, 12%);
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -50,8 +50,8 @@ input[type='radio']:after {
     border: none;
     border-radius: 5px;
     margin: 0px 0px 10px 0px;
-    background-color: hsl(0, 0%, 93%);
-    color: hsl(221, 14%, 31%);
+    background-color: hsl(268, 71%, 12%);
+    color: hsl(52, 100%, 62%);
     font-size: xx-large;
     display: flex;
     justify-content: flex-end;
@@ -76,7 +76,7 @@ input[type='radio']:after {
     border: none;
     padding: 10px;
     border-radius: 5px;
-    background-color: hsl(0, 5%, 81%);
+    background-color: hsl(268, 71%, 12%);
 }
 
 #keys div{
@@ -87,40 +87,40 @@ input[type='radio']:after {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* box-shadow: 1px 1px 2px 1px hsl(35, 11%, 61%); */
+    /* box-shadow: 1px 1px 2px 1px hsl(290, 70%, 36%); */
     /* color: hsl(221, 14%, 31%); */
 }
 
 .keypad:hover{
-    background-color: hwb(0 97% 3%);
+    background-color: hsl(281, 89%, 26%);
 }
 
 .keypad{
-      background-color: hsl(45, 7%, 89%);
-      color: hsl(221, 14%, 31%);
-      box-shadow: 1px 1px 2px 1px hsl(35, 11%, 61%);
+      background-color: hsl(268, 47%, 21%);
+      color: hsl(52, 100%, 62%);
+      box-shadow: 1px 1px 2px 1px hsl(290, 70%, 36%);
 }
 
 #reset{
     grid-column-start: 1;
     grid-column-end: 3;
-    background: hsl(185, 42%, 37%);
-    box-shadow: 1px 1px 2px 1px hsl(185, 58%, 25%);
+    background: hsl(281, 89%, 26%);
+    box-shadow: 1px 1px 2px 1px hsl(285, 91%, 52%);
     color: white;
 }
 
 #del{
-    background: hsl(185, 42%, 37%);
-    box-shadow: 1px 1px 2px 1px hsl(185, 58%, 25%);
+    background: hsl(281, 89%, 26%);
+    box-shadow: 1px 1px 2px 1px hsl(285, 91%, 52%);
     color: white;
 }
 
 #equal{
     grid-column-start: 3;
     grid-column-end: 5;
-    background-color: hsl(25, 98%, 40%);
+    background-color: hsl(176, 100%, 44%);
     color: white;
-    box-shadow: 1px 1px 2px 1px hsl(25, 99%, 27%);
+    box-shadow: 1px 1px 2px 1px hsl(177, 92%, 70%);
 }
 
 
