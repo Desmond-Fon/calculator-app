@@ -17,6 +17,9 @@ const equal = document.getElementById('equal');
 const reset = document.getElementById('reset');
 const del = document.getElementById('del');
 const display = document.getElementById('display');
+const first = document.getElementById('first');
+const second = document.getElementById('second');
+const third = document.getElementById('third');
 
 one.addEventListener('click', () => {
     display.textContent += '1';
@@ -98,3 +101,18 @@ del.addEventListener('click', () => {
     display.textContent = str
     console.log(str);
 }) 
+
+
+
+first.addEventListener("click", () => {
+    console.log('clicked');
+    document.getElementById("siteTheme").setAttribute('href', 'style.css')
+});
+
+second.addEventListener("click", () => {
+    document.getElementById("siteTheme").setAttribute('href', 'theme2.css')
+});
+
+third.addEventListener("click", () => {
+    document.getElementById("siteTheme").setAttribute('href', 'theme3.css')
+});
