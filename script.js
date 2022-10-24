@@ -59,19 +59,19 @@ zero.addEventListener('click', () => {
     console.log('clicked');
 })
 plus.addEventListener('click', () => {
-    display.textContent += '+';
+    display.textContent += ' + ';
     console.log('clicked');
 })
 minus.addEventListener('click', () => {
-    display.textContent += '-';
+    display.textContent += ' - ';
     console.log('clicked');
 })
 multiply.addEventListener('click', () => {
-    display.textContent += 'x';
+    display.textContent += ' * ';
     console.log('clicked');
 })
 divide.addEventListener('click', () => {
-    display.textContent += '/';
+    display.textContent += ' / ';
     console.log('clicked');
 })
 decimal.addEventListener('click', () => {
@@ -82,7 +82,19 @@ decimal.addEventListener('click', () => {
 equal.addEventListener('click', () => {
     console.log(display.textContent);
     let stringResult = display.textContent;
-    let result = Number(stringResult);
+    let result = eval(stringResult);
     console.log(typeof(result));
     display.textContent = result;
 })
+
+reset.addEventListener('click', () => {
+    display.textContent = '';
+})
+
+del.addEventListener('click', () => {
+    let str = display.textContent;
+    console.log(str);
+    str = str.slice(0, -1);
+    display.textContent = str
+    console.log(str);
+}) 
